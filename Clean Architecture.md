@@ -116,22 +116,26 @@ Ch0(notes) --> Ch1(Edsger Wybe Dijkstra);
 Ch1 --> Ch11(born: Rotterdam, 1930);
 Ch1 --> Ch12(took a job with the Mathematical Center of Amsterdam, 1952)
 Ch1 --> Ch13("married Maria Debets with job title 'theoretical physicist'( authorities were unwilling to accept 'programmer' as profession), 1957")
+Ch1 --> Ch14(letter to the editor of CACM, 1968)
+Ch14 --> Ch141("Go To Statement Considered Harmful")
+
+Ch0 --> Ch2(problems)
+Ch2 --> Ch21(programming is hard)
+Ch2 --> Ch22(programmers don't do it very well)
+
+Ch0 --> Ch3(discovery)
+Ch3 --> Ch31(All programs can be constructed from just three structures: sequence, selection, and iteration.)
+Ch0 --> Ch4(foundation)
+Ch4 --> Ch42(modules can be functionally decomposed)
+Ch0 --> Ch5(disciplines)
+Ch5 --> Ch51(structured analysis)
+Ch5 --> Ch52(structured design)
+Ch0 --> Ch6(Tests)
+Ch6 --> Ch61(a program can be proven incorrect by a test, but it can not be proven correct)
+Ch0 --> Ch7(conclusion)
+Ch7 --> Ch71(software is like a science and is driven by falsifiablility)
 
 ```
-
-### Proof 
-
-### A Harmful Proclamation
-
-### Functional Decomposition
-
-### No Formal Proofs
-
-### Science to the Rescue
-
-### Tests
-
-### Conclusion
 
 ## Chapter 5 Object-Oriented Programming
 
