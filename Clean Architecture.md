@@ -162,14 +162,10 @@ Ch3 --> Ch33(OO imposes discipline on indirect transfer of control )
 
 OO is the ability, through the use of polymorphism, to gain absolute control over every source code dependency in the system. It allows the architect to create a plugin architecture, in which modules that contain high-level policies are independent of modules that contain low-level details. The low-level details are relegated to plugin modules that can be deployed and developed independently from the modules that contain high-level policies.
 
-### Encapsulation
-
-### Inheritance
-
-### Polymorphism
-
-### Conclusion
-
-
 ## Chapter 6 Functional Programming
+
+If we have enough storage and enough processor power, we can make our applications entirely immutable—and, therefore, entirely functional.
+
+## Conclusion
+Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less.
 
