@@ -9,7 +9,7 @@ graph LR;
   preface --> Pre1(findings);
   Pre1 --> Pre11(The architecure rules are the same);
 
-  preface --> Pre2(conclfindusion);
+  preface --> Pre2(conclusion);
   Pre2 --> Pre21(the rules of software architecture are independent of every other variable.);
 ```
 
@@ -137,7 +137,39 @@ Ch7 --> Ch71(software is like a science and is driven by falsifiablility)
 
 ```
 
-## Chapter 5 Object-Oriented Programming
+## Chapter 5 Object-Oriented Programming 
+
+
+```Mermaid
+graph LR
+
+Ch0(OO) --> Ch1(Encapsulation)
+Ch0 --> Ch2(Inheritance)
+Ch0 --> Ch3(Polymorphism)
+
+Ch1 --> Ch11(it is difficult to accept that OO depends on strong encapsulation)
+Ch1 --> Ch12(Indeed, many OO languages have little or no enforced encapsulation)
+
+
+Ch2 --> Ch21(Inheritance is simply the redeclaration of a group of variables and functions within an enclosing scope.)
+Ch2 --> Ch22(make the masquerading of data structures significantly more convenient.)
+
+Ch3 --> Ch31(polymorphism is an application of pointers to functions.)
+Ch3 --> Ch32(OO languages may not have given us polymorphism, but they have made it much safer and much more convenient.)
+Ch3 --> Ch33(OO imposes discipline on indirect transfer of control )
+
+```
+
+OO is the ability, through the use of polymorphism, to gain absolute control over every source code dependency in the system. It allows the architect to create a plugin architecture, in which modules that contain high-level policies are independent of modules that contain low-level details. The low-level details are relegated to plugin modules that can be deployed and developed independently from the modules that contain high-level policies.
+
+### Encapsulation
+
+### Inheritance
+
+### Polymorphism
+
+### Conclusion
+
 
 ## Chapter 6 Functional Programming
 
