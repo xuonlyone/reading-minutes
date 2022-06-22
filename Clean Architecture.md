@@ -169,3 +169,35 @@ If we have enough storage and enough processor power, we can make our applicatio
 ## Conclusion
 Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less.
 
+# Design Principles
+
+```Mermaid
+graph LR
+Ch0(Design Principles) --> Ch1(goal)
+Ch1 --> Ch11(Tolerate change)
+Ch1 --> Ch12(Easy to understand)
+Ch1 --> Ch13(Are the basis of components that can be used in many software systems)
+
+Ch0 --> Ch2(SOLID)
+Ch2 --> Ch21(SRP: The Single Responsibility Principle)
+Ch2 --> Ch22(OCP: The Open-Closed Principle)
+Ch2 --> Ch23(LSP: The Liskov Substitution Principle)
+Ch2 --> Ch24(ISP: The Interface Segregation Principle)
+Ch2 --> Ch25(DIP: The Dependency Inversion Principle)
+```
+
+## Chapter 7 SRP: The single responsibility principle
+
+```Mermaid
+graph LR
+Ch0(SRP) --> Ch1(A module should be responsible to one, and only one, actor.)
+Ch0 --> Ch2(symptoms of violating it)
+Ch2 --> Ch21(Accidental duplication)
+Ch2 --> Ch22(Merges)
+Ch0 --> Ch3(solutions)
+Ch3 --> Ch31(separate the data from the functions)
+Ch3 --> Ch32(use the Facade pattern)
+
+```
+
+The Single Responsibility Principle is about functions and classes—but it reappears in a different form at two more levels. At the level of components, it becomes the Common Closure Principle. At the architectural level, it becomes the Axis of Change responsible for the creation of Architectural Boundaries.
