@@ -5,7 +5,7 @@
 The languages have gotten a little better. The tools have gotten fantastically better. But the basic building blocks of a computer program have not changed.
 
 ```mermaid
-graph LR;
+flowchart LR;
   preface --> Pre1(findings);
   Pre1 --> Pre11(The architecure rules are the same);
 
@@ -22,8 +22,8 @@ For starters, the auther asserts that there is no difference between design and 
 The measure of design quality is simply the measure of the effort required to meet the needs of the customer. If that effort is low, and stays low throughout the lifetime of the system, the design is good.
 
 
-```Mermaid
-graph LR;
+```mermaid
+flowchart LR;
   Ch0(notes) --> Ch1(Goal);
   Ch1 --> CH11(The goal of software architecture is to minimize the human resource required to build and maintain the required system.);
 
@@ -47,8 +47,8 @@ graph LR;
 
 ### chapter 2 A Tail of Two Values
 
-```Mermaid
-graph LR;
+```mermaid
+flowchart LR;
   Ch0(notes) --> Ch1(Values);
   Ch1 --> Ch11(behavior);
   Ch1 --> Ch12(architecture);
@@ -85,8 +85,8 @@ graph LR;
 
 ## Chapter 3 Paradigm Overview
 
-```Mermaid
-  graph LR;
+```mermaid
+flowchart LR;
   Ch0(notes) -->Ch1(programming paradigms);
   Ch1 --> Ch11(structed programming);
   Ch1 --> Ch12(object-orient programming);
@@ -110,8 +110,8 @@ graph LR;
 
 ## Chapter 4 Structured Programming
 
-```Mermaid
-graph LR;
+```mermaid
+flowchart LR;
   Ch0(notes) --> Ch1(Edsger Wybe Dijkstra);
   Ch1 --> Ch11(born: Rotterdam, 1930);
   Ch1 --> Ch12(took a job with the Mathematical Center of Amsterdam, 1952)
@@ -140,8 +140,8 @@ graph LR;
 ## Chapter 5 Object-Oriented Programming 
 
 
-```Mermaid
-graph LR
+```mermaid
+flowchart LR
   Ch0(OO) --> Ch1(Encapsulation)
   Ch0 --> Ch2(Inheritance)
   Ch0 --> Ch3(Polymorphism)
@@ -170,8 +170,8 @@ Software—the stuff of computer programs—is composed of sequence, selection, 
 
 # Design Principles
 
-```Mermaid
-graph LR
+```mermaid
+flowchart LR
   Ch0(Design Principles) --> Ch1(goal)
   Ch1 --> Ch11(Tolerate change)
   Ch1 --> Ch12(Easy to understand)
@@ -187,8 +187,8 @@ graph LR
 
 ## Chapter 7 SRP: The single responsibility principle
 
-```Mermaid
-  graph LR
+```mermaid
+flowchart LR
   Ch0(SRP) --> Ch1(A module should be responsible to one, and only one, actor.)
   Ch0 --> Ch2(symptoms of violating it)
   Ch2 --> Ch21(Accidental duplication)
@@ -202,8 +202,34 @@ The Single Responsibility Principle is about functions and classes—but it reap
 
 ## Chapter 8 OCP: The Open-Closed Principle
 
-```Mermaid
-graph LR
+```mermaid
+flowchart LR
   Ch0(OCP) --> Ch1(A software artifact should be open for extension but closed for modification)
-  
+  Ch0 --> Ch2(If component A should be protected from changes in component B, then component B should depend on component A.)
+
 ```
+
+## Chapter 9 LSP: The Liskov substitution Principle
+
+```mermaid
+flowchart LR
+  Ch0(LSP) --> Ch1(If for each object o1 of type S there is an object o2 of type T such that for all programs P defined in terms of T, the behavior of P is unchanged when o1 is substituted for o2 then S is a subtype of T)
+```
+
+
+## Chapter 10 ISP: The Interface Segregation Principle
+
+```mermaid
+flowchart LR
+  Ch0(ISP) --> Ch1(ISP & language)
+  Ch1 --> Ch11(statically typed language)
+  Ch1 --> Ch12(dynamically typed language)
+  Ch11 --> Ch111(Create source code dependencies with include, import, use...)
+  Ch12 --> Ch121(inferred at runtime)
+  Ch12 --> Ch122(more flexble, less tightly coupled)
+
+  Ch0 --> Ch2(ISP & architecture)
+  Ch2 --> Ch21(harmful to depend on modules that contain more than you need)
+```
+
+## Chapter 11 DIP: The Dependency Inversion Principle
