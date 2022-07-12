@@ -168,7 +168,7 @@ If we have enough storage and enough processor power, we can make our applicatio
 ## Conclusion
 Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less.
 
-# Design Principles
+# Part 3 Design Principles
 
 ```mermaid
 flowchart LR
@@ -233,3 +233,47 @@ flowchart LR
 ```
 
 ## Chapter 11 DIP: The Dependency Inversion Principle
+
+```mermaid
+flowchart LR
+  Ch0(DIP) -->Ch1(the most flexible systems are those in which source code dependencies refer only to abstractions, not to concretions)
+  Ch0 --> Ch2(It is the volatile concrete elements of our system that we want to avoid depending on.)
+  Ch0 --> Ch3(coding practices)
+  Ch3 --> Ch31("Don’t refer to volatile concrete classes.")
+  Ch3 --> Ch32("Don’t derive from volatile concrete classes.")
+  Ch3 --> Ch33("Don’t override concrete functions.")
+  Ch3 --> Ch34("Never mention the name of anything concrete and volatile.")
+```
+
+
+# Part 4 Component Principles
+
+## Chapter 12 Components
+
+Components are the smallest entities that can be deployed as part of
+a system.
+Regardless of how they are eventually deployed, well-designed components always retain the ability to be independently deployable and, therefore, independently developable.
+
+```mermaid
+flowchart LR
+  Ch0(Components) --> Ch1(units of deployment)
+  Ch0 --> Ch2(the granule of deployment)
+  Ch2 --> Ch21(compiled languages)
+  Ch21 --> Ch211(aggregations of binary files)
+  Ch2 --> Ch22(interpreted languages)
+  Ch22 --> Ch221(aggregations of source files)
+
+```
+
+## Chapter 13 Component Cohesion
+
+```mermaid
+flowchart LR
+  Ch0(Component Cohesion) 
+  Ch0 --> Ch1(REP: The Resue/Release Equivalence Principle)
+  Ch0 --> Ch2(CCP: The Common Closure Principle)
+  Ch0 --> Ch3(CRP: The Common Reuse Principle)
+
+  Ch1 --> Ch11(The granule of reuse is the granule of release.)
+
+```
