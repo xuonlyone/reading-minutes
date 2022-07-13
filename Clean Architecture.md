@@ -275,5 +275,36 @@ flowchart LR
   Ch0 --> Ch3(CRP: The Common Reuse Principle)
 
   Ch1 --> Ch11(The granule of reuse is the granule of release.)
+  Ch1 --> Ch12(Classes and modules that are grouped together into a component should be releasable together.)
+
+  Ch2 --> Ch21(Gather into components those classes that change for the same reasons and at the same times. )
+  Ch2 --> Ch22(Separate into different components those classes that change at different times and for different reasons.)
+
+  Ch3 --> Ch31("Don’t force users of a component to depend on things they don’t need.")
 
 ```
+
+
+## Chapter 14 Component Coupling
+
+```mermaid
+flowchart LR
+  Ch0(Component Coupling)
+  Ch0 --> Ch1(ADP: The Acyclic Dependencies Principle)
+  Ch0 --> Ch2(SDP: The Stable Dependencies Principle)
+
+
+  Ch1 --> Ch11(Allow no cycles in the component dependency graph.)
+  Ch1 --> Ch12(break a cycle of components)
+  Ch12 --> Ch121("Apply the Dependency Inversion Principle (DIP).")
+  Ch12 --> Ch122("Move the class(es) that they both depend on into that new component")
+
+  Ch2 --> Ch21(Depend in the direction of stability.)
+```
+### ADP
+The component structure cannot be designed from the top down. It is not one of the first things about the system that is designed, but rather evolves as the system grows and changes.
+Component dependency diagrams have very little do to with describing the function of the application. Instead, they are a map to the buildability and maintainability of the application. This is why they aren’t designed at the beginning of the project.
+
+### SDP
+Any component that we expect to be volatile should not be depended on by a component that is
+difficult to change.
