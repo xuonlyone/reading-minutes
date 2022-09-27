@@ -341,3 +341,56 @@ Component dependency diagrams have very little do to with describing the functio
 ### SDP
 Any component that we expect to be volatile should not be depended on by a component that is
 difficult to change.
+
+# Part 5 Architecture
+
+## Chapter 15 What is architecture
+
+```mermaid
+flowchart LR
+  Ch0(Software Architecture)
+  Ch0 --> Ch1(concept)
+  Ch1 --> Ch11(software architect)
+  Ch11 --> Ch111(the best programmers)
+  Ch11 --> Ch112(continue to take programming tasks)
+  Ch11 --> Ch113(guide the team toward a design that maximinzes productivity)
+  Ch1 --> Ch12(primary purpose)
+  Ch12 --> Ch121(support the life cycle of the system)
+  Ch121 --> Ch1211(easy to understand)
+  Ch121 --> Ch1212(easy to develop)
+  Ch121 --> Ch1213(easy to maintain)
+  Ch121 --> Ch1214(easy to deploy)
+  Ch1 --> Ch13(ultimate goal)
+  Ch13 --> Ch131(minimize the lifetime coset of the system)
+  Ch13 --> Ch132(maximize programmer productivity)
+
+  Ch0 --> Ch2(development)
+  Ch2 --> Ch21(Different team structures imply different architectural decisions.)
+
+  Ch0 --> Ch3(deployment)
+  Ch3 --> Ch31(make a system that can be easily deployed with a single action.)
+  
+  Ch0 --> Ch4(operation)
+  Ch4 --> Ch41(communicates the operational needs of the system.)
+
+  Ch0 --> Ch5(maintenace)
+  Ch5 --> Ch51(The primary cost of maintenance is in spelunking and risk.)
+
+  Ch0 --> Ch6(keeping options open)
+  Ch6 --> Ch61(software has two types of value)
+  Ch61 --> Ch611(behavior)
+  Ch61 --> Ch612(structure)
+  Ch612 --> Ch6121(makes software soft)
+  Ch6 --> Ch62(two major elements)
+  Ch62 --> Ch621(policy)
+  Ch621 --> Ch6211(embody all the business rules and procedures)
+  Ch621 --> Ch6212(the true value of the system lives)
+  Ch62 --> Ch622(details)
+  Ch622 --> Ch6221(do not impact the behavior of the policy)
+  Ch6 --> Ch63(goal)
+  Ch63 --> Ch631(recognize policy as the most essential element of the system)
+  Ch63 --> Ch632(make the details irrelevant to that policy)
+  Ch6 --> Ch64(A good architect maximizes the number of decisions not made.)
+```
+
+
