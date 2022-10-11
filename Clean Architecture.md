@@ -394,3 +394,56 @@ flowchart LR
 ```
 
 
+## Chapter 16 Independence
+
+### use cases
+The architecture must support the use cases.  
+The most important thing a good architecture can do to support behavior is to clarify and expose that behavior so that the intent of the system is visible at the architectural level.
+
+### operation
+Architecture plays a more substantial, and less cosmetic, role in supporting the operation of the system.
+### development
+A system that must be developed by an organization with many teams and many concerns must have an architecture that facilitates independent actions by those teams, so that the teams do not interfere with each other during development.
+
+### deployment
+A good architecture helps the system to be immediately deployable after build.
+
+### leaving operations open
+A good architecture makes the system easy to change, in all the ways that it must change, by leaving options open.
+
+### Decoupling 
+```mermaid
+flowchart LR
+  Ch0(Decoupling) --> Ch1(Layers)
+  Ch0 --> Ch2(Use cases)
+  Ch0 --> Ch3(Mode)
+  Ch3 --> Ch31(ways)
+  Ch31 --> Ch311(source level)
+  Ch31 --> Ch312("binary code (deploy) level")
+  Ch31 --> Ch313("execution unit (service) level")
+```
+
+### Independent
+```mermaid
+flowchart LR
+  Ch0(Independent) --> Ch1(Devlop ability)
+  Ch0 --> Ch2(Deploy ability)
+```
+
+
+### Duplicatoin
+
+```mermaid
+flowchart LR
+  Ch0(Duplication) --> Ch1(true)
+  Ch1 --> Ch11(every change to one instance necessitates the same change to every duplicate of that instance)
+  Ch0 --> Ch2(false)
+  Ch2 --> Ch21(If two apparently duplicated sections of code evolve along different paths)
+  Ch21 --> Ch211(change at different rates)
+  Ch21 --> Ch212(change for different reasons)
+```
+
+### Conclusion
+The decoupling mode of a system is one of those things that is likely to change with time, and a good architect foresees and appropriately facilitates those changes.
+
+## Chapter 17 Boundaries: Drawing Lines
